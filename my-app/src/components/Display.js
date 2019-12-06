@@ -1,18 +1,18 @@
-import React, { useState } from 'react';
+import React from 'react';
 
-const Display = () => {
-  const [strikes, setStrikes] = useState(0)
-  const [balls, setBalls] = useState(0)
-
+const Display = (props) => {
+  
   return (
     <div>
       <section>
-        <h1>Strikes</h1>
-        <div>{strikes}</div>
-      </section>
-      <section>
-        <h1>Balls</h1>
-        <div>{balls}</div>
+        <div>
+          <h1>Strikes</h1>
+          <p>{props.strikes}</p>
+        </div>
+        <div>
+          <h1>Balls</h1>
+          <p>{props.balls}</p>
+        </div>
       </section>
 
     </div>
